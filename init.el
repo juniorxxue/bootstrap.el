@@ -20,6 +20,9 @@
 (ivy-mode)
 (setq ivy-use-virtual-buffers t)
 (setq enable-recursive-minibuffers t)
+;; sort by history
+(straight-use-package 'smex)
+(require 'smex)
 
 (global-set-key (kbd "C-s") 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
