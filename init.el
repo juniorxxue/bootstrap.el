@@ -63,3 +63,8 @@
 (good-scroll-mode 1)
 (global-set-key (kbd "M-j") #'good-scroll-up)
 (global-set-key (kbd "M-k") #'good-scroll-down)
+
+;; undo
+(straight-use-package 'undo-tree)
+(require 'undo-tree)
+(global-undo-tree-mode)
